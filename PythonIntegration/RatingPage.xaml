@@ -8,10 +8,17 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-
+            <Image
+                x:Name="movieImage"
+                Source="{Binding MovieImage}"
+                HeightRequest="300"
+                WidthRequest="200">
+                
+            </Image>
             <Label
+                x:Name="movieTitle"
                 FontSize="Large"
-                Text="Titulo do filme"
+                Text="{Binding MovieTitle}"
                 HorizontalTextAlignment="Center"
                 VerticalOptions="Start">
 
@@ -25,11 +32,16 @@
                     <ColumnDefinition Width="0.2*"></ColumnDefinition>
                     <ColumnDefinition Width="0.2*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <ImageButton x:Name="star1" Grid.Column="0" Source="star.png" HeightRequest="100" WidthRequest="100" Clicked="star1_Clicked" ></ImageButton>
-                <ImageButton x:Name="star2" Grid.Column="1" Source="star.png" HeightRequest="100" WidthRequest="100" Clicked="star2_Clicked"></ImageButton>
-                <ImageButton x:Name="star3" Grid.Column="2" Source="star.png" HeightRequest="100" WidthRequest="100" Clicked="star3_Clicked"></ImageButton>
-                <ImageButton x:Name="star4" Grid.Column="3" Source="star.png" HeightRequest="100" WidthRequest="100" Clicked="star4_Clicked"></ImageButton>
-                <ImageButton x:Name="star5" Grid.Column="4" Source="star.png" HeightRequest="100" WidthRequest="100" Clicked="star5_Clicked"></ImageButton>
+                <ImageButton x:Name="star1" Grid.Column="0" Source="{Binding Source1}" HeightRequest="100" WidthRequest="100" 
+                             Command="{Binding RatingCommand}" CommandParameter="1"></ImageButton>
+                <ImageButton x:Name="star2" Grid.Column="1" Source="{Binding Source2}" HeightRequest="100" WidthRequest="100" 
+                             Command="{Binding RatingCommand}" CommandParameter="2"></ImageButton>
+                <ImageButton x:Name="star3" Grid.Column="2" Source="{Binding Source3}" HeightRequest="100" WidthRequest="100"
+                             Command="{Binding RatingCommand}" CommandParameter="3"></ImageButton>
+                <ImageButton x:Name="star4" Grid.Column="3" Source="{Binding Source4}" HeightRequest="100" WidthRequest="100"
+                             Command="{Binding RatingCommand}" CommandParameter="4"></ImageButton>
+                <ImageButton x:Name="star5" Grid.Column="4" Source="{Binding Source5}" HeightRequest="100" WidthRequest="100"
+                             Command="{Binding RatingCommand}" CommandParameter="5"></ImageButton>
             </Grid>
             <Grid ColumnSpacing="-1000" Margin="0,50,0,0">
                 <Grid.ColumnDefinitions>
@@ -45,7 +57,7 @@
                 TextColor="Black"
                 BackgroundColor="Transparent"
                 HorizontalOptions="Center"
-                Clicked="nvr_watch_Clicked">
+                Command="{Binding NeverWatch}">
                 </Button>
                 <Button
                 x:Name="next"
@@ -56,7 +68,7 @@
                 TextColor="Black"
                 BackgroundColor="Transparent"
                 HorizontalOptions="Center"
-                Clicked="next_Clicked">
+                Command="{Binding NextMovie}">
                 </Button>
             </Grid>
 

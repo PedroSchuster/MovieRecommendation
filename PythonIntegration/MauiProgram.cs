@@ -4,8 +4,12 @@ namespace PythonIntegration;
 
 public static class MauiProgram
 {
+    public static MoviesController moviesController = new MoviesController();
+
 	public static MauiApp CreateMauiApp()
 	{
+        Initialize();
+        
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
@@ -15,13 +19,19 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-        
 
 		return builder.Build();
 	}
 
     public static void Initialize()
     {
+        string pathMovies = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\movies.csv";
+        string pathRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\ratings.csv";
+        string pathUserRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\userrating.csv";
+        moviesController.LoadMoviesData(pathMovies);
+        moviesController.LoadRatingsData(pathRating, moviesController.MoviesRating);
+        moviesController.LoadRatingsData(pathUserRating, moviesController.RatedMovies);
+
         string pythonDll = @"C:\Users\Usuario\AppData\Local\Programs\Python\Python38\python38.dll";
         Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
         PythonEngine.Initialize();

@@ -12,7 +12,6 @@ namespace PythonIntegration
     {
         private List<Image> starts = new List<Image>();
 
-        public Movie Movie { get; set; }
 
         public ICommand SetStars { get; set; }
 

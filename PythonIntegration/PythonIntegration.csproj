@@ -13,7 +13,7 @@
 
 		<!-- Display name -->
 		<ApplicationTitle>PythonIntegration</ApplicationTitle>
-
+    
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.pythonintegration</ApplicationId>
 		<ApplicationIdGuid>19D4A9C3-EC41-4B3E-AE21-D3FB783E6970</ApplicationIdGuid>
@@ -49,8 +49,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Primitives" Version="7.0.0" />
 	  <PackageReference Include="pythonnet" Version="3.0.1" />
-	</ItemGroup>
+	  <PackageReference Include="System.Collections" Version="4.3.0" />
+	  <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="7.0.0" />
+	  <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+	  <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+	  <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+	  <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+	  <PackageReference Include="System.Runtime.Handles" Version="4.3.0" />
+	  <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+	  <PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+	  <PackageReference Include="System.Threading" Version="4.3.0" />
+	  <PackageReference Include="TMDbLib" Version="1.9.2" />
+  
+  </ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="RatingPage.xaml">
