@@ -120,7 +120,6 @@ namespace PythonIntegration
 
         public MovieRatingVM()
         {
-            MauiProgram.moviesController.PopulateRatedMovies(null);
             GenerateMovieInfo();
 
             RatingCommand = new Command((object n) =>
@@ -139,6 +138,7 @@ namespace PythonIntegration
             NeverWatch = new Command(() =>
             {
                 GenerateMovieInfo();
+                Rating = 0;
             });
 
         }

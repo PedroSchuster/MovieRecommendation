@@ -847,12 +847,6 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\alicethroughthelookingglass.scale-100.jpg">
-      <PackagePath>alicethroughthelookingglass.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\anastasia.scale-100.jpg">
-      <PackagePath>anastasia.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
@@ -946,23 +940,8 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\babymama.scale-100.jpg">
-      <PackagePath>babymama.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\balto.scale-100.jpg">
-      <PackagePath>balto.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\battleinseattle.scale-100.jpg">
-      <PackagePath>battleinseattle.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\beautifulcreatures.scale-100.jpg">
-      <PackagePath>beautifulcreatures.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluecar.scale-100.jpg">
-      <PackagePath>bluecar.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dehelaasheidderdingen.scale-100.jpg">
-      <PackagePath>dehelaasheidderdingen.scale-100.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\chasingamy.scale-100.jpg">
+      <PackagePath>chasingamy.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
@@ -979,47 +958,11 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dragonfly.scale-100.jpg">
-      <PackagePath>dragonfly.scale-100.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\fantasticks.scale-100.jpg">
+      <PackagePath>fantasticks.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hancock.scale-100.jpg">
-      <PackagePath>hancock.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\iceage.scale-100">
-      <PackagePath>iceage.scale-100</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\illbehomeforchristmas.scale-100.jpg">
-      <PackagePath>illbehomeforchristmas.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\image.scale-100.jpg">
-      <PackagePath>image.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\kikisdeliveryservice.scale-100.jpg">
-      <PackagePath>kikisdeliveryservice.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\looper.scale-100.jpg">
-      <PackagePath>looper.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\margaret.scale-100.jpg">
-      <PackagePath>margaret.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mercuryplains.scale-100.jpg">
-      <PackagePath>mercuryplains.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\missiontomars.scale-100.jpg">
-      <PackagePath>missiontomars.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\nightofthelivingdead.scale-100.jpg">
-      <PackagePath>nightofthelivingdead.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pajamagame.scale-100.jpg">
-      <PackagePath>pajamagame.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\shadowofthevampire.scale-100.jpg">
-      <PackagePath>shadowofthevampire.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\sisteract2backinthehabit.scale-100.jpg">
-      <PackagePath>sisteract2backinthehabit.scale-100.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\secretlifeofbees.scale-100.jpg">
+      <PackagePath>secretlifeofbees.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\star.scale-100.png">
       <PackagePath>star.scale-100.png</PackagePath>
@@ -1027,38 +970,8 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\star2.scale-100.png">
       <PackagePath>star2.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\steelmagnolias.scale-100.jpg">
-      <PackagePath>steelmagnolias.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\taxi.scale-100.jpg">
-      <PackagePath>taxi.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\theangrybirdsmovie.scale-100.jpg">
-      <PackagePath>theangrybirdsmovie.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\thecontender.scale-100.jpg">
-      <PackagePath>thecontender.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\theescort.scale-100.jpg">
-      <PackagePath>theescort.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\thefalconandthesnowman.scale-100.jpg">
-      <PackagePath>thefalconandthesnowman.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\toystory.scale-100.jpg">
-      <PackagePath>toystory.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\unitedstatesofleland.scale-100.jpg">
-      <PackagePath>unitedstatesofleland.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\werebackadinosaursstory.scale-100.jpg">
-      <PackagePath>werebackadinosaursstory.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\wildstrawberries.scale-100.jpg">
-      <PackagePath>wildstrawberries.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\wristcutters.scale-100">
-      <PackagePath>wristcutters.scale-100</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\twodays.scale-100.jpg">
+      <PackagePath>twodays.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -24,7 +24,7 @@
 
             </Label>
 
-            <Grid ColumnSpacing="-500" Margin="0,50,0,0">
+            <Grid ColumnSpacing="-500" Margin="0,0,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.2*"></ColumnDefinition>
                     <ColumnDefinition Width="0.2*"></ColumnDefinition>
@@ -43,13 +43,12 @@
                 <ImageButton x:Name="star5" Grid.Column="4" Source="{Binding Source5}" HeightRequest="100" WidthRequest="100"
                              Command="{Binding RatingCommand}" CommandParameter="5"></ImageButton>
             </Grid>
-            <Grid ColumnSpacing="-1000" Margin="0,50,0,0">
+            <Grid ColumnSpacing="-1000" Margin="0,15,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.5*"></ColumnDefinition>
                     <ColumnDefinition Width="0.5*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Button
-                x:Name="nvr_watch"
                 Grid.Column="0"
                 FontSize="Small"
                 Text="Não assisti ainda"
@@ -60,7 +59,6 @@
                 Command="{Binding NeverWatch}">
                 </Button>
                 <Button
-                x:Name="next"
                 Grid.Column="1"
                 FontSize="Small"
                 Text="Próximo filme"
