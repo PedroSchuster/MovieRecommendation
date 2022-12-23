@@ -14,6 +14,7 @@ using TMDbLib.Objects.Movies;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 using Debug = System.Diagnostics.Debug;
+using Python.Runtime;
 
 namespace PythonIntegration
 {
@@ -21,8 +22,6 @@ namespace PythonIntegration
     {
 
         private string lastFilePath = String.Empty;
-
-        private List<int> ratedMoviesId = new List<int>();
 
         public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> _ratedMovies = 
             new Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>>();
@@ -33,7 +32,7 @@ namespace PythonIntegration
 
         private Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> _moviesRating =
                 new Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>>();
-        public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> MoviesRating { get { return _moviesRating; } }
+        public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> MovieRatings { get { return _moviesRating; } }
 
 
         public void LoadMoviesData(string pathMovies)
@@ -93,7 +92,8 @@ namespace PythonIntegration
                 sw.WriteLine(userId + "," + movieId + "," + rating);
             }
 
-            PopulateRatedMovies(movieId);
+            ICollection<string> genres = _movies[movieId].Item2;
+            RatedMovies.Add(movieId, new Tuple<Dictionary<int, float>, ICollection<string>>(new Dictionary<int, float>(), genres));
 
             return Task.CompletedTask;
         }
@@ -128,7 +128,7 @@ namespace PythonIntegration
                 {
                     continue;
                 }
-            } while (results.Results == null || results.Results.Count == 0 || results.Results.FirstOrDefault().PosterPath == null || ratedMoviesId.Contains(localMovieId));
+            } while (results.Results == null || results.Results.Count == 0 || results.Results.FirstOrDefault().PosterPath == null || RatedMovies.ContainsKey(localMovieId));
 
 
             int movieId = results.Results.FirstOrDefault().Id;
@@ -182,16 +182,40 @@ namespace PythonIntegration
 
         }
 
-        public void PopulateRatedMovies(int? id)
+        public void GenerateMovieRecommendation()
         {
-            if (ratedMoviesId.Count <= 0)
+            var a = RunPythonCode();
+            var b = 2;
+        }
+
+        public void Initialize()
+        {
+            string pathMovies = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\movies.csv";
+            string pathRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\ratings.csv";
+            string pathUserRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\userrating.csv";
+            LoadMoviesData(pathMovies);
+            LoadRatingsData(pathRating, MovieRatings);
+            LoadRatingsData(pathUserRating, RatedMovies);
+
+            string pythonDll = @"C:\Users\Usuario\AppData\Local\Programs\Python\Python38\python38.dll";
+            Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
+            PythonEngine.Initialize();
+        }
+
+        public object RunPythonCode()
+        {
+            dynamic result = null;
+            using (Py.GIL())
             {
-                ratedMoviesId = RatedMovies.Keys.ToList();
+                dynamic os = Py.Import("os");
+                dynamic sys = Py.Import("sys");
+                sys.path.append(os.getcwd());
+
+                dynamic test = Py.Import("sistema_recomendacao");
+                result = test.getRecomendacoesItens();
             }
-            if (id != null)
-            {
-                ratedMoviesId.Add(id.Value);
-            }
+
+            return result;
         }
     }
 }

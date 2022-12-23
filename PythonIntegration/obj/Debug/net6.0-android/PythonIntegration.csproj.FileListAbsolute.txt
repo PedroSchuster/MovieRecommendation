@@ -1003,3 +1003,8 @@ C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegr
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\star.png
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\star2.png
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\secretlifeofbees.jpg
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\android\assets\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\android\assets\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\android\assets\TMDbLib.dll
