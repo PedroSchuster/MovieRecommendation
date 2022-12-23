@@ -143,7 +143,7 @@ def getRecomendacoes(base, user):
 def loadData(path=r'C:\Users\Usuario\Desktop\Programacao\Aulas\Python\ml-100k'):
         filmes = {}
         for linha in open(path + '/u.item'):
-            id, titulo  = linha.split(',')[0:2]
+            id, titulo  = linha.split('|')[0:2]
             filmes[id] = titulo
         base = {}
         for linha in open(path + '/u.data'):
@@ -179,5 +179,5 @@ def getRecomendacoesItens(baseUsuario, similaridadeItens, usuario):
     return ranking
 
 def func(nome):
-    return getRecomendacoesItens(avaliacoesUsuarios, calculaItensSimilares(loadData()),  nome)
+    return getRecomendacoesItens(avaliacoesUsuarios, calculaItensSimilares(avaliacoesFilmes),  nome)
 print(func("Leonardo"))

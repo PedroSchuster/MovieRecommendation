@@ -265,3 +265,5 @@ C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegr
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-ios\iossimulator-x64\PythonIntegration.pdb
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-ios\iossimulator-x64\PythonIntegration.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-ios\iossimulator-x64\ref\PythonIntegration.dll
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\Resources\star.png
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\Resources\star2.png

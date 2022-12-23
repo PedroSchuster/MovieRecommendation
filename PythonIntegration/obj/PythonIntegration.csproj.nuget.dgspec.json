@@ -63,6 +63,10 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -72,6 +76,50 @@
               "target": "Package",
               "version": "[6.0.486, )",
               "autoReferenced": true
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IO.FileSystem": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Resources.ResourceManager": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.Extensions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Runtime.Handles": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.InteropServices": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Text.Encoding.Extensions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Threading": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "TMDbLib": {
+              "target": "Package",
+              "version": "[1.9.2, )"
             },
             "pythonnet": {
               "target": "Package",
@@ -111,6 +159,10 @@
         "net6.0-ios15.4": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -121,10 +173,54 @@
               "version": "[6.0.486, )",
               "autoReferenced": true
             },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IO.FileSystem": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Resources.ResourceManager": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.Extensions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Runtime.Handles": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.InteropServices": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
               "version": "[6.0.1, )",
               "autoReferenced": true
+            },
+            "System.Text.Encoding.Extensions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Threading": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "TMDbLib": {
+              "target": "Package",
+              "version": "[1.9.2, )"
             },
             "pythonnet": {
               "target": "Package",
@@ -164,6 +260,10 @@
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -174,10 +274,54 @@
               "version": "[6.0.486, )",
               "autoReferenced": true
             },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IO.FileSystem": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Resources.ResourceManager": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.Extensions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Runtime.Handles": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.InteropServices": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
               "version": "[6.0.1, )",
               "autoReferenced": true
+            },
+            "System.Text.Encoding.Extensions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Threading": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "TMDbLib": {
+              "target": "Package",
+              "version": "[1.9.2, )"
             },
             "pythonnet": {
               "target": "Package",
@@ -218,6 +362,10 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "dependencies": {
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -233,6 +381,50 @@
               "target": "Package",
               "version": "[10.0.22000.194, )",
               "autoReferenced": true
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IO.FileSystem": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Resources.ResourceManager": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.Extensions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Runtime.Handles": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime.InteropServices": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Text.Encoding.Extensions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Threading": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "TMDbLib": {
+              "target": "Package",
+              "version": "[1.9.2, )"
             },
             "pythonnet": {
               "target": "Package",
