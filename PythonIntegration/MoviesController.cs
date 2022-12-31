@@ -14,7 +14,7 @@ using TMDbLib.Objects.Movies;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 using Debug = System.Diagnostics.Debug;
-using Python.Runtime;
+using Microsoft.Scripting.Hosting;
 
 namespace PythonIntegration
 {
@@ -61,9 +61,9 @@ namespace PythonIntegration
                     while (!sr.EndOfStream)
                     {
                         string[] colunms = sr.ReadLine().Split(",");
-                        int userId = int.Parse(colunms[0]);
-                        int movieId = int.Parse(colunms[1]);
-                        float rating = float.Parse(colunms[2]);
+                        int userId = 0;
+                        int movieId = int.Parse(colunms[0]);
+                        float rating = float.Parse(colunms[1]);
 
                         if (_movies.ContainsKey(movieId))
                         {
@@ -190,30 +190,27 @@ namespace PythonIntegration
 
         public void Initialize()
         {
-            string pathMovies = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\movies.csv";
-            string pathRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\ratings.csv";
+            string pathMovies = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\movies2.csv";
+            //string pathRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\ratings2.csv";
             string pathUserRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\userrating.csv";
             LoadMoviesData(pathMovies);
-            LoadRatingsData(pathRating, MovieRatings);
             LoadRatingsData(pathUserRating, RatedMovies);
 
-            string pythonDll = @"C:\Users\Usuario\AppData\Local\Programs\Python\Python38\python38.dll";
-            Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
-            PythonEngine.Initialize();
         }
 
         public object RunPythonCode()
         {
-            dynamic result = null;
-            using (Py.GIL())
-            {
-                dynamic os = Py.Import("os");
-                dynamic sys = Py.Import("sys");
-                sys.path.append(os.getcwd());
 
-                dynamic test = Py.Import("sistema_recomendacao");
-                result = test.getRecomendacoesItens();
-            }
+            string pythonDll = @"C:\Users\Usuario\AppData\Local\Programs\Python\Python34\python34.dll";
+            Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
+
+            Microsoft.Scripting.Hosting.ScriptEngine pythonEngine = IronPython.Hosting.Python.CreateEngine(); 
+            ScriptScope scope = pythonEngine.CreateScope();
+            var libs = new[] { @"c:\users\usuario\appdata\local\programs\python\python310\lib\site-packages" };
+            pythonEngine.SetSearchPaths(libs);
+            pythonEngine.ExecuteFile(@"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\sistema_recomendacao.py",scope);
+            dynamic testFunction = scope.GetVariable("getRecomendacoesItens");
+            var result = testFunction();
 
             return result;
         }

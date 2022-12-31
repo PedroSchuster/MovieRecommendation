@@ -721,6 +721,27 @@
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.27\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\dynamiclanguageruntime\1.3.3\lib\net6.0\Microsoft.Dynamic.dll">
+      <PackagePath>Microsoft.Dynamic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\dynamiclanguageruntime\1.3.3\lib\net6.0\Microsoft.Scripting.Metadata.dll">
+      <PackagePath>Microsoft.Scripting.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\dynamiclanguageruntime\1.3.3\lib\net6.0\Microsoft.Scripting.dll">
+      <PackagePath>Microsoft.Scripting.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\ironpython\3.4.0\lib\net6.0\IronPython.Modules.dll">
+      <PackagePath>IronPython.Modules.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\ironpython\3.4.0\lib\net6.0\IronPython.SQLite.dll">
+      <PackagePath>IronPython.SQLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\ironpython\3.4.0\lib\net6.0\IronPython.Wpf.dll">
+      <PackagePath>IronPython.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\ironpython\3.4.0\lib\net6.0\IronPython.dll">
+      <PackagePath>IronPython.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>
@@ -790,11 +811,14 @@
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.windowsappsdk\1.1.3\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\mono.unix\7.1.0-final.1.21458.1\lib\net6.0\Mono.Unix.dll">
+      <PackagePath>Mono.Unix.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\pythonnet\3.0.1\lib\netstandard2.0\Python.Runtime.dll">
-      <PackagePath>Python.Runtime.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\system.codedom\6.0.0\lib\net6.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\system.diagnostics.diagnosticsource\7.0.0\lib\net6.0\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>

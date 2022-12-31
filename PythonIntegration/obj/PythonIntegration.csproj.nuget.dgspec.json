@@ -63,6 +63,10 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
+            "IronPython": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
             "Microsoft.Extensions.Primitives": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -120,10 +124,6 @@
             "TMDbLib": {
               "target": "Package",
               "version": "[1.9.2, )"
-            },
-            "pythonnet": {
-              "target": "Package",
-              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -159,6 +159,10 @@
         "net6.0-ios15.4": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
+            "IronPython": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
             "Microsoft.Extensions.Primitives": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -221,10 +225,6 @@
             "TMDbLib": {
               "target": "Package",
               "version": "[1.9.2, )"
-            },
-            "pythonnet": {
-              "target": "Package",
-              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -260,6 +260,10 @@
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
+            "IronPython": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
             "Microsoft.Extensions.Primitives": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -322,10 +326,6 @@
             "TMDbLib": {
               "target": "Package",
               "version": "[1.9.2, )"
-            },
-            "pythonnet": {
-              "target": "Package",
-              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -362,6 +362,10 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "dependencies": {
+            "IronPython": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
             "Microsoft.Extensions.Primitives": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -425,10 +429,6 @@
             "TMDbLib": {
               "target": "Package",
               "version": "[1.9.2, )"
-            },
-            "pythonnet": {
-              "target": "Package",
-              "version": "[3.0.1, )"
             }
           },
           "imports": [

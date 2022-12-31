@@ -1,3 +1,4 @@
+movie_id,title,genres
 1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
 2,Jumanji (1995),Adventure|Children|Fantasy
 3,Grumpier Old Men (1995),Comedy|Romance
@@ -50,8 +51,8 @@
 54,Big Green, The (1995),Children|Comedy
 55,Georgia (1995),Drama
 57,Home for the Holidays (1995),Drama
-58,Postman, The (Postino, Il) (1994),Comedy|Drama|Romance
-60,Indian in the Cupboard, The (1995),Adventure|Children|Fantasy
+58,Postman, The (Postino Il) (1994),Comedy|Drama|Romance
+60,Indian in the Cupboard The (1995),Adventure|Children|Fantasy
 61,Eye for an Eye (1996),Drama|Thriller
 62,Mr. Holland's Opus (1995),Drama
 63,Don't Be a Menace to South Central While Drinking Your Juice in the Hood (1996),Comedy|Crime
