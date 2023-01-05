@@ -14,7 +14,7 @@ using TMDbLib.Objects.Movies;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 using Debug = System.Diagnostics.Debug;
-using Microsoft.Scripting.Hosting;
+using Python.Runtime;
 
 namespace PythonIntegration
 {
@@ -85,11 +85,11 @@ namespace PythonIntegration
             }
         }
 
-        public Task WriteRatingData(string path, int userId, int movieId, float rating)
+        public Task WriteRatingData(string path, int movieId, float rating)
         {
             using (StreamWriter sw = File.AppendText(path))
             {
-                sw.WriteLine(userId + "," + movieId + "," + rating);
+                sw.WriteLine(movieId + "," + rating);
             }
 
             ICollection<string> genres = _movies[movieId].Item2;
@@ -184,7 +184,7 @@ namespace PythonIntegration
 
         public void GenerateMovieRecommendation()
         {
-            var a = RunPythonCode();
+            RunPythonCode();
             var b = 2;
         }
 
@@ -198,21 +198,33 @@ namespace PythonIntegration
 
         }
 
-        public object RunPythonCode()
+        public void RunPythonCode()
         {
 
-            string pythonDll = @"C:\Users\Usuario\AppData\Local\Programs\Python\Python34\python34.dll";
-            Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
+            try
+            {
+                string scriptFile = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\sistema_recomendacao.py";
+                string pythonCode = "";
+                using (var streamReader = new StreamReader(scriptFile, Encoding.UTF8))
+                {
+                    pythonCode = streamReader.ReadToEnd();
+                }
+                PythonEngine.Initialize();
 
-            Microsoft.Scripting.Hosting.ScriptEngine pythonEngine = IronPython.Hosting.Python.CreateEngine(); 
-            ScriptScope scope = pythonEngine.CreateScope();
-            var libs = new[] { @"c:\users\usuario\appdata\local\programs\python\python310\lib\site-packages" };
-            pythonEngine.SetSearchPaths(libs);
-            pythonEngine.ExecuteFile(@"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\sistema_recomendacao.py",scope);
-            dynamic testFunction = scope.GetVariable("getRecomendacoesItens");
-            var result = testFunction();
+                object returnedVariable = new object();
 
-            return result;
+                using (Py.GIL())
+                {
+                    var scope = Py.CreateScope();
+                    dynamic a = scope.Exec(pythonCode);
+                    returnedVariable = scope.Get<object>("result");
+                }
+            }
+            catch (Exception ex) 
+            {
+                Console.Write(ex.Message);
+            }
+
         }
     }
 }
