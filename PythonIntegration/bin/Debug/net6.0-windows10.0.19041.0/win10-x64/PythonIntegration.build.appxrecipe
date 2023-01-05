@@ -997,6 +997,9 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\babel.scale-100.jpg">
       <PackagePath>babel.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\beachthe.scale-100.jpg">
+      <PackagePath>beachthe.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\chasingamy.scale-100.jpg">
       <PackagePath>chasingamy.scale-100.jpg</PackagePath>
     </AppxPackagedFile>

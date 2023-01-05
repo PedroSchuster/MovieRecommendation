@@ -15,6 +15,7 @@ using System.Text.RegularExpressions;
 using System.Diagnostics;
 using Debug = System.Diagnostics.Debug;
 using Python.Runtime;
+using Fasterflect;
 
 namespace PythonIntegration
 {
@@ -42,12 +43,13 @@ namespace PythonIntegration
             {
                 while (!sr.EndOfStream)
                 {
-                    string[] colunms = sr.ReadLine().Split(",");
-                    int movieId = int.Parse(colunms[0]);
-                    string title = colunms[1];
-                    ICollection<string> genres = colunms[2].Split("|");
+                        string[] colunms = sr.ReadLine().Split(",");
+                        int movieId = int.Parse(colunms[0]);
+                        string title = colunms[1];
+                        ICollection<string> genres = colunms[2].Split("|");
 
-                    _movies.Add(movieId, new Tuple<string, ICollection<string>>(title, genres));
+                        _movies.Add(movieId, new Tuple<string, ICollection<string>>(title, genres));
+                    
                 }
             }
         }
@@ -60,21 +62,26 @@ namespace PythonIntegration
                 {
                     while (!sr.EndOfStream)
                     {
-                        string[] colunms = sr.ReadLine().Split(",");
-                        int userId = 0;
-                        int movieId = int.Parse(colunms[0]);
-                        float rating = float.Parse(colunms[1]);
-
-                        if (_movies.ContainsKey(movieId))
+                        if (sr.ReadLine() != "id,rating")
                         {
-                            ICollection<string> genres = _movies[movieId].Item2;
+                            string[] colunms = sr.ReadLine().Split(",");
+                            int userId = 0;
+                            int movieId = int.Parse(colunms[0]);
+                            float rating = float.Parse(colunms[1]);
 
-                            if (!dict.ContainsKey(movieId))
+                            if (_movies.ContainsKey(movieId))
                             {
-                                dict.Add(movieId, new Tuple<Dictionary<int, float>, ICollection<string>>(new Dictionary<int, float>(), genres));
+                                ICollection<string> genres = _movies[movieId].Item2;
+
+                                if (!dict.ContainsKey(movieId))
+                                {
+                                    dict.Add(movieId, new Tuple<Dictionary<int, float>, ICollection<string>>(new Dictionary<int, float>(), genres));
+                                }
+                                dict[movieId].Item1.Add(userId, rating);
                             }
-                            dict[movieId].Item1.Add(userId, rating);
                         }
+
+                          
 
                     }
                 }
@@ -184,8 +191,9 @@ namespace PythonIntegration
 
         public void GenerateMovieRecommendation()
         {
-            RunPythonCode();
-            var b = 2;
+            var result = RunPythonCode();
+            var movie = result.GetElement(0);
+
         }
 
         public void Initialize()
@@ -198,8 +206,9 @@ namespace PythonIntegration
 
         }
 
-        public void RunPythonCode()
+        public object RunPythonCode()
         {
+            object returnedVariable = new object();
 
             try
             {
@@ -211,7 +220,6 @@ namespace PythonIntegration
                 }
                 PythonEngine.Initialize();
 
-                object returnedVariable = new object();
 
                 using (Py.GIL())
                 {
@@ -219,11 +227,14 @@ namespace PythonIntegration
                     dynamic a = scope.Exec(pythonCode);
                     returnedVariable = scope.Get<object>("result");
                 }
+
             }
             catch (Exception ex) 
             {
                 Console.Write(ex.Message);
             }
+
+            return returnedVariable;
 
         }
     }
