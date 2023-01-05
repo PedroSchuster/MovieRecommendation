@@ -38,6 +38,8 @@ C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegr
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\splash.png
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\splash.png
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\babel.jpg
+C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\beachthe.jpg
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\chasingamy.jpg
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\fantasticks.jpg
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\secretlifeofbees.jpg
@@ -1032,5 +1034,3 @@ C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegr
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\babel.jpg
-C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-android\resizetizer\r\drawable\beachthe.jpg

@@ -142,7 +142,6 @@ namespace PythonIntegration
 
         public MovieRecommendationVM()
         {
-            GenerateMovieRecommendation();
 
             RatingCommand = new Command((object n) =>
             {
@@ -182,7 +181,18 @@ namespace PythonIntegration
 
         private void GenerateMovieRecommendation()
         {
-            MauiProgram.moviesController.GenerateMovieRecommendation();
+            Tuple<int, string, string> movieInfo = new Tuple<int, string, string>(0, null, null);
+
+            Task.Run(async () =>
+            {
+                movieInfo = await MauiProgram.moviesController.GenerateMovieRecommendation();
+
+            }).Wait();
+
+            MovieId = movieInfo.Item1;
+            MovieTitle = movieInfo.Item2;
+            MovieImage = ImageSource.FromFile(movieInfo.Item3);
+            MovieIsVisible = true;
         }
 
         private void ChangeStarImage(int n)

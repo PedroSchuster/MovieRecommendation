@@ -24,7 +24,7 @@ namespace PythonIntegration
 
         private string lastFilePath = String.Empty;
 
-        public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> _ratedMovies = 
+        public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> _ratedMovies =
             new Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>>();
         public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> RatedMovies { get { return _ratedMovies; } }
 
@@ -43,13 +43,23 @@ namespace PythonIntegration
             {
                 while (!sr.EndOfStream)
                 {
-                        string[] colunms = sr.ReadLine().Split(",");
+
+                    if (sr.ReadLine() == "id,title,genres")
+                        continue;
+
+
+                    string[] colunms = sr.ReadLine()?.Split(",");
+                    if (colunms != null)
+                    {
                         int movieId = int.Parse(colunms[0]);
-                        string title = colunms[1];
+                        string title = colunms[1].Split("(")[0];
                         ICollection<string> genres = colunms[2].Split("|");
 
                         _movies.Add(movieId, new Tuple<string, ICollection<string>>(title, genres));
-                    
+                    }
+
+
+
                 }
             }
         }
@@ -62,9 +72,13 @@ namespace PythonIntegration
                 {
                     while (!sr.EndOfStream)
                     {
-                        if (sr.ReadLine() != "id,rating")
+                        if (sr.ReadLine() == "id,rating")
+                            continue;
+
+
+                        string[] colunms = sr.ReadLine()?.Split(",");
+                        if (colunms != null)
                         {
-                            string[] colunms = sr.ReadLine().Split(",");
                             int userId = 0;
                             int movieId = int.Parse(colunms[0]);
                             float rating = float.Parse(colunms[1]);
@@ -79,14 +93,16 @@ namespace PythonIntegration
                                 }
                                 dict[movieId].Item1.Add(userId, rating);
                             }
+
                         }
 
-                          
+
+
 
                     }
                 }
             }
-            catch(System.IO.FileNotFoundException)
+            catch (System.IO.FileNotFoundException)
             {
                 File.Create(pathRatings);
             }
@@ -105,38 +121,28 @@ namespace PythonIntegration
             return Task.CompletedTask;
         }
 
-        public async Task<Tuple<int,string,string>> GenerateMovieInfo()
+        private async Task<Tuple<int, string, string>> GenerateMovieInfo(int id)
         {
             TMDbClient client = new TMDbClient("7eedcbe5bf96088f5f0abe418c8bf0ea");
 
-            Random random = new Random();
-
-            int localMovieId = 0;
-
-            int count = _movies.Keys.Count;
-
             string movieName = null;
             SearchContainer<SearchMovie> results = new SearchContainer<SearchMovie>();
-            do
+
+            if (_movies.ContainsKey(id))
             {
-                int randInt = random.Next(1, count);
+                movieName = _movies[id].Item1;
+            }
+            try
+            {
+                results = await client.SearchMovieAsync(movieName);
+            }
+            catch (TMDbLib.Objects.Exceptions.GeneralHttpException ex)
+            {
+                return null;
+            }
 
-                localMovieId = _movies.ElementAt(randInt).Key;
-
-                if (_movies.ContainsKey(randInt))
-                {
-                    movieName = _movies[localMovieId].Item1.Split("(")[0];
-                }
-                try
-                {
-                    results = await client.SearchMovieAsync(movieName);
-                }
-                catch(TMDbLib.Objects.Exceptions.GeneralHttpException ex)
-                {
-                    continue;
-                }
-            } while (results.Results == null || results.Results.Count == 0 || results.Results.FirstOrDefault().PosterPath == null || RatedMovies.ContainsKey(localMovieId));
-
+            if (results.Results == null || results.Results.Count == 0 || results.Results.FirstOrDefault().PosterPath == null || RatedMovies.ContainsKey(id))
+                return null;
 
             int movieId = results.Results.FirstOrDefault().Id;
             Movie movie = await client.GetMovieAsync(movieId);
@@ -185,15 +191,50 @@ namespace PythonIntegration
 
 
 
-            return new Tuple<int, string, string>(localMovieId, movieName, filePath);
+            return new Tuple<int, string, string>(id, movieName, filePath);
 
         }
 
-        public void GenerateMovieRecommendation()
+        public async Task<Tuple<int, string, string>> GenerateRandomMovie()
         {
-            var result = RunPythonCode();
-            var movie = result.GetElement(0);
+            Tuple<int, string, string> result;
+            int movieId = 0;
 
+            do
+            {
+                Random random = new Random();
+
+                int count = _movies.Keys.Count;
+
+                int randInt = random.Next(1, count);
+
+                movieId = _movies.ElementAt(randInt).Key;
+
+                result = await GenerateMovieInfo(movieId);
+
+            } while (result == null);
+           
+
+            return result;
+        }
+
+        public async Task<Tuple<int, string, string>> GenerateMovieRecommendation()
+        {
+            var resultFromPy = RunPythonCode();
+            var movie = resultFromPy.GetElement(0);
+
+            Tuple<int, string, string> result;
+            int index = 0;
+
+            do
+            {
+                var movieId = Convert.ToInt32(Convert.ToDecimal(movie.GetElement(index).ToString().Replace(".0", "")));
+                result = await GenerateMovieInfo(movieId);
+                index += 1;
+
+            } while (result == null);
+
+            return result;
         }
 
         public void Initialize()
@@ -229,7 +270,7 @@ namespace PythonIntegration
                 }
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 Console.Write(ex.Message);
             }
