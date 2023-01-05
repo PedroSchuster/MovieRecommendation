@@ -130,7 +130,7 @@ namespace PythonIntegration
             NextMovie = new Command(async() =>
             {
                 await MauiProgram.moviesController.
-                    WriteRatingData("C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\userrating.csv", 0, MovieId, Rating);
+                    WriteRatingData("C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\userrating.csv", MovieId, Rating);
                 GenerateMovieInfo();
                 Rating = 0;
             });

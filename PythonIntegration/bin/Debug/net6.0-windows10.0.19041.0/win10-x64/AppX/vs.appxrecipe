@@ -29,25 +29,57 @@
     <AppXManifest Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-26T22:01:02.871</Modified>
+      <Modified>2023-01-05T14:12:16.354</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-26T22:01:02.446</Modified>
+      <Modified>2023-01-05T14:12:16.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\PythonIntegration.runtimeconfig.json">
       <PackagePath>PythonIntegration.runtimeconfig.json</PackagePath>
-      <Modified>2022-12-26T21:30:09.689</Modified>
+      <Modified>2023-01-05T14:12:16.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\PythonIntegration.dll">
       <PackagePath>PythonIntegration.dll</PackagePath>
-      <Modified>2022-12-26T22:01:01.755</Modified>
+      <Modified>2023-01-05T14:12:15.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PythonIntegration.exe</PackagePath>
-      <Modified>2022-12-26T22:01:01.761</Modified>
+      <Modified>2023-01-05T14:12:15.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\clr.py">
+      <PackagePath>clr.py</PackagePath>
+      <Modified>2021-03-09T18:49:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\__init__.py">
+      <PackagePath>pythonnet\__init__.py</PackagePath>
+      <Modified>2022-08-24T19:00:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\__pycache__\__init__.cpython-36.pyc">
+      <PackagePath>pythonnet\__pycache__\__init__.cpython-36.pyc</PackagePath>
+      <Modified>2022-06-29T15:15:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\find_libpython\__init__.py">
+      <PackagePath>pythonnet\find_libpython\__init__.py</PackagePath>
+      <Modified>2022-08-24T19:00:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\find_libpython\__main__.py">
+      <PackagePath>pythonnet\find_libpython\__main__.py</PackagePath>
+      <Modified>2022-08-24T19:00:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\runtime\Python.Runtime.deps.json">
+      <PackagePath>pythonnet\runtime\Python.Runtime.deps.json</PackagePath>
+      <Modified>2022-08-24T20:26:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\runtime\Python.Runtime.dll">
+      <PackagePath>pythonnet\runtime\Python.Runtime.dll</PackagePath>
+      <Modified>2022-08-24T20:26:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\util\__init__.py">
+      <PackagePath>pythonnet\util\__init__.py</PackagePath>
+      <Modified>2022-08-24T19:00:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.9\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -973,6 +1005,10 @@
       <PackagePath>Microsoft.Scripting.dll</PackagePath>
       <Modified>2022-12-08T01:42:48.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\fasterflect\3.0.0\lib\netstandard20\Fasterflect.dll">
+      <PackagePath>Fasterflect.dll</PackagePath>
+      <Modified>2020-05-18T18:32:40.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\ironpython\3.4.0\lib\net6.0\IronPython.Modules.dll">
       <PackagePath>IronPython.Modules.dll</PackagePath>
       <Modified>2022-12-10T20:12:30.000</Modified>
@@ -1089,6 +1125,10 @@
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2016-06-13T23:06:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\lib\net6.0\Python.Runtime.dll">
+      <PackagePath>Python.Runtime.dll</PackagePath>
+      <Modified>2022-08-24T20:26:06.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\system.codedom\6.0.0\lib\net6.0\System.CodeDom.dll">
       <PackagePath>System.CodeDom.dll</PackagePath>
       <Modified>2021-10-22T23:47:46.000</Modified>
@@ -1115,7 +1155,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\PythonIntegration.deps.json">
       <PackagePath>PythonIntegration.deps.json</PackagePath>
-      <Modified>2022-12-26T22:01:02.692</Modified>
+      <Modified>2023-01-05T14:12:16.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1135,23 +1175,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:27:41.410</Modified>
+      <Modified>2023-01-05T14:11:00.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:27:41.421</Modified>
+      <Modified>2023-01-05T14:11:00.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:27:41.437</Modified>
+      <Modified>2023-01-05T14:11:00.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:27:41.461</Modified>
+      <Modified>2023-01-05T14:11:00.900</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:27:41.553</Modified>
+      <Modified>2023-01-05T14:11:00.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -1163,127 +1203,131 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2022-12-26T21:30:08.037</Modified>
+      <Modified>2023-01-05T14:11:01.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.182</Modified>
+      <Modified>2023-01-05T14:11:01.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.191</Modified>
+      <Modified>2023-01-05T14:11:01.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.199</Modified>
+      <Modified>2023-01-05T14:11:01.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.213</Modified>
+      <Modified>2023-01-05T14:11:01.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.263</Modified>
+      <Modified>2023-01-05T14:11:01.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.049</Modified>
+      <Modified>2023-01-05T14:11:01.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.051</Modified>
+      <Modified>2023-01-05T14:11:01.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.054</Modified>
+      <Modified>2023-01-05T14:11:01.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.057</Modified>
+      <Modified>2023-01-05T14:11:01.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.061</Modified>
+      <Modified>2023-01-05T14:11:01.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.095</Modified>
+      <Modified>2023-01-05T14:11:01.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.099</Modified>
+      <Modified>2023-01-05T14:11:01.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.104</Modified>
+      <Modified>2023-01-05T14:11:01.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.111</Modified>
+      <Modified>2023-01-05T14:11:01.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.123</Modified>
+      <Modified>2023-01-05T14:11:01.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.077</Modified>
+      <Modified>2023-01-05T14:11:01.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.079</Modified>
+      <Modified>2023-01-05T14:11:01.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.082</Modified>
+      <Modified>2023-01-05T14:11:01.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.086</Modified>
+      <Modified>2023-01-05T14:11:01.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.092</Modified>
+      <Modified>2023-01-05T14:11:01.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.063</Modified>
+      <Modified>2023-01-05T14:11:01.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.066</Modified>
+      <Modified>2023-01-05T14:11:01.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.068</Modified>
+      <Modified>2023-01-05T14:11:01.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.071</Modified>
+      <Modified>2023-01-05T14:11:01.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.075</Modified>
+      <Modified>2023-01-05T14:11:01.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.128</Modified>
+      <Modified>2023-01-05T14:11:01.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.132</Modified>
+      <Modified>2023-01-05T14:11:01.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.139</Modified>
+      <Modified>2023-01-05T14:11:01.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.149</Modified>
+      <Modified>2023-01-05T14:11:01.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.175</Modified>
+      <Modified>2023-01-05T14:11:01.155</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\babel.scale-100.jpg">
+      <PackagePath>babel.scale-100.jpg</PackagePath>
+      <Modified>2023-01-05T14:05:14.485</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\chasingamy.scale-100.jpg">
       <PackagePath>chasingamy.scale-100.jpg</PackagePath>
@@ -1291,23 +1335,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.021</Modified>
+      <Modified>2023-01-05T14:11:01.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.029</Modified>
+      <Modified>2023-01-05T14:11:01.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.040</Modified>
+      <Modified>2023-01-05T14:11:01.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.059</Modified>
+      <Modified>2023-01-05T14:11:01.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-12-26T21:30:08.094</Modified>
+      <Modified>2023-01-05T14:11:01.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\fantasticks.scale-100.jpg">
       <PackagePath>fantasticks.scale-100.jpg</PackagePath>

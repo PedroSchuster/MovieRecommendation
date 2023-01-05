@@ -37,6 +37,30 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PythonIntegration.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\clr.py">
+      <PackagePath>clr.py</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\__init__.py">
+      <PackagePath>pythonnet\__init__.py</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\__pycache__\__init__.cpython-36.pyc">
+      <PackagePath>pythonnet\__pycache__\__init__.cpython-36.pyc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\find_libpython\__init__.py">
+      <PackagePath>pythonnet\find_libpython\__init__.py</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\find_libpython\__main__.py">
+      <PackagePath>pythonnet\find_libpython\__main__.py</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\runtime\Python.Runtime.deps.json">
+      <PackagePath>pythonnet\runtime\Python.Runtime.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\runtime\Python.Runtime.dll">
+      <PackagePath>pythonnet\runtime\Python.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\contentFiles\any\any\pythonnet\util\__init__.py">
+      <PackagePath>pythonnet\util\__init__.py</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.9\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
     </AppxPackagedFile>
@@ -730,6 +754,9 @@
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\dynamiclanguageruntime\1.3.3\lib\net6.0\Microsoft.Scripting.dll">
       <PackagePath>Microsoft.Scripting.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\fasterflect\3.0.0\lib\netstandard20\Fasterflect.dll">
+      <PackagePath>Fasterflect.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\ironpython\3.4.0\lib\net6.0\IronPython.Modules.dll">
       <PackagePath>IronPython.Modules.dll</PackagePath>
     </AppxPackagedFile>
@@ -816,6 +843,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\quantconnect.pythonnet\2.0.17\lib\net6.0\Python.Runtime.dll">
+      <PackagePath>Python.Runtime.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\system.codedom\6.0.0\lib\net6.0\System.CodeDom.dll">
       <PackagePath>System.CodeDom.dll</PackagePath>
@@ -963,6 +993,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\babel.scale-100.jpg">
+      <PackagePath>babel.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\chasingamy.scale-100.jpg">
       <PackagePath>chasingamy.scale-100.jpg</PackagePath>

@@ -51,8 +51,8 @@ def calculaItensSimilares(base):
     return result
 
 def getRecomendacoesItens():
-    baseUsuario = pd.read_csv("userrating.csv")
-    path_sim = "similares.csv"
+    baseUsuario = pd.read_csv(r"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\userrating.csv")
+    path_sim = r"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\similares.csv"
     
     similaridade_itens = pd.read_csv(path_sim, index_col=0)
     similaridade_itens_dict = similaridade_itens.to_dict("split")
@@ -97,4 +97,4 @@ def loadMoviesData():
         movies_dict[id] = title, genres
     return movies_dict
 
-print(getRecomendacoesItens())
+result = getRecomendacoesItens()
