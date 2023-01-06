@@ -7,45 +7,45 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PythonIntegration
-build_property.ProjectDir = C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\
+build_property.ProjectDir = c:\Users\Usuario\Documents\GitHub\MovieRecommendation\PythonIntegration\
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/App.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/AppShell.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/MainPage.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/RatingPage.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/RatingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.RatingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RatingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RatingPage.xaml
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/RecommendationPage.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/RecommendationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.RecommendationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RecommendationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RecommendationPage.xaml
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/Resources/Styles/Colors.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Usuario/Desktop/Programacao/Aulas/Python/PythonIntegration/PythonIntegration/Resources/Styles/Styles.xaml]
+[c:/Users/Usuario/Documents/GitHub/MovieRecommendation/PythonIntegration/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PythonIntegration.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
