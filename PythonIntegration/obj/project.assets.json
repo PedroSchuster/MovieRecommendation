@@ -57659,11 +57659,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\PythonIntegration.csproj",
+      "projectUniqueName": "c:\\Users\\Usuario\\Documents\\GitHub\\MovieRecommendation\\PythonIntegration\\PythonIntegration.csproj",
       "projectName": "PythonIntegration",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\PythonIntegration.csproj",
+      "projectPath": "c:\\Users\\Usuario\\Documents\\GitHub\\MovieRecommendation\\PythonIntegration\\PythonIntegration.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\obj\\",
+      "outputPath": "c:\\Users\\Usuario\\Documents\\GitHub\\MovieRecommendation\\PythonIntegration\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
