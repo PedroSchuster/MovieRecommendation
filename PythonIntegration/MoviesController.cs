@@ -15,7 +15,10 @@ using System.Text.RegularExpressions;
 using System.Diagnostics;
 using Debug = System.Diagnostics.Debug;
 using Python.Runtime;
+<<<<<<< HEAD
 using Fasterflect;
+=======
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
 
 namespace PythonIntegration
 {
@@ -24,7 +27,11 @@ namespace PythonIntegration
 
         private string lastFilePath = String.Empty;
 
+<<<<<<< HEAD
         public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> _ratedMovies =
+=======
+        public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> _ratedMovies = 
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
             new Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>>();
         public Dictionary<int, Tuple<Dictionary<int, float>, ICollection<string>>> RatedMovies { get { return _ratedMovies; } }
 
@@ -43,6 +50,7 @@ namespace PythonIntegration
             {
                 while (!sr.EndOfStream)
                 {
+<<<<<<< HEAD
 
                     if (sr.ReadLine() == "id,title,genres")
                         continue;
@@ -60,6 +68,14 @@ namespace PythonIntegration
 
 
 
+=======
+                    string[] colunms = sr.ReadLine().Split(",");
+                    int movieId = int.Parse(colunms[0]);
+                    string title = colunms[1];
+                    ICollection<string> genres = colunms[2].Split("|");
+
+                    _movies.Add(movieId, new Tuple<string, ICollection<string>>(title, genres));
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
                 }
             }
         }
@@ -72,6 +88,7 @@ namespace PythonIntegration
                 {
                     while (!sr.EndOfStream)
                     {
+<<<<<<< HEAD
                         if (sr.ReadLine() == "id,rating")
                             continue;
 
@@ -103,6 +120,28 @@ namespace PythonIntegration
                 }
             }
             catch (System.IO.FileNotFoundException)
+=======
+                        string[] colunms = sr.ReadLine().Split(",");
+                        int userId = 0;
+                        int movieId = int.Parse(colunms[0]);
+                        float rating = float.Parse(colunms[1]);
+
+                        if (_movies.ContainsKey(movieId))
+                        {
+                            ICollection<string> genres = _movies[movieId].Item2;
+
+                            if (!dict.ContainsKey(movieId))
+                            {
+                                dict.Add(movieId, new Tuple<Dictionary<int, float>, ICollection<string>>(new Dictionary<int, float>(), genres));
+                            }
+                            dict[movieId].Item1.Add(userId, rating);
+                        }
+
+                    }
+                }
+            }
+            catch(System.IO.FileNotFoundException)
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
             {
                 File.Create(pathRatings);
             }
@@ -121,6 +160,7 @@ namespace PythonIntegration
             return Task.CompletedTask;
         }
 
+<<<<<<< HEAD
         private async Task<Tuple<int, string, string>> GenerateMovieInfo(int id)
         {
             TMDbClient client = new TMDbClient("7eedcbe5bf96088f5f0abe418c8bf0ea");
@@ -143,6 +183,40 @@ namespace PythonIntegration
 
             if (results.Results == null || results.Results.Count == 0 || results.Results.FirstOrDefault().PosterPath == null || RatedMovies.ContainsKey(id))
                 return null;
+=======
+        public async Task<Tuple<int,string,string>> GenerateMovieInfo()
+        {
+            TMDbClient client = new TMDbClient("7eedcbe5bf96088f5f0abe418c8bf0ea");
+
+            Random random = new Random();
+
+            int localMovieId = 0;
+
+            int count = _movies.Keys.Count;
+
+            string movieName = null;
+            SearchContainer<SearchMovie> results = new SearchContainer<SearchMovie>();
+            do
+            {
+                int randInt = random.Next(1, count);
+
+                localMovieId = _movies.ElementAt(randInt).Key;
+
+                if (_movies.ContainsKey(randInt))
+                {
+                    movieName = _movies[localMovieId].Item1.Split("(")[0];
+                }
+                try
+                {
+                    results = await client.SearchMovieAsync(movieName);
+                }
+                catch(TMDbLib.Objects.Exceptions.GeneralHttpException ex)
+                {
+                    continue;
+                }
+            } while (results.Results == null || results.Results.Count == 0 || results.Results.FirstOrDefault().PosterPath == null || RatedMovies.ContainsKey(localMovieId));
+
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
 
             int movieId = results.Results.FirstOrDefault().Id;
             Movie movie = await client.GetMovieAsync(movieId);
@@ -191,6 +265,7 @@ namespace PythonIntegration
 
 
 
+<<<<<<< HEAD
             return new Tuple<int, string, string>(id, movieName, filePath);
 
         }
@@ -235,6 +310,16 @@ namespace PythonIntegration
             } while (result == null);
 
             return result;
+=======
+            return new Tuple<int, string, string>(localMovieId, movieName, filePath);
+
+        }
+
+        public void GenerateMovieRecommendation()
+        {
+            RunPythonCode();
+            var b = 2;
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
         }
 
         public void Initialize()
@@ -247,9 +332,14 @@ namespace PythonIntegration
 
         }
 
+<<<<<<< HEAD
         public object RunPythonCode()
         {
             object returnedVariable = new object();
+=======
+        public void RunPythonCode()
+        {
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
 
             try
             {
@@ -261,6 +351,10 @@ namespace PythonIntegration
                 }
                 PythonEngine.Initialize();
 
+<<<<<<< HEAD
+=======
+                object returnedVariable = new object();
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
 
                 using (Py.GIL())
                 {
@@ -268,15 +362,23 @@ namespace PythonIntegration
                     dynamic a = scope.Exec(pythonCode);
                     returnedVariable = scope.Get<object>("result");
                 }
+<<<<<<< HEAD
 
             }
             catch (Exception ex)
+=======
+            }
+            catch (Exception ex) 
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
             {
                 Console.Write(ex.Message);
             }
 
+<<<<<<< HEAD
             return returnedVariable;
 
+=======
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
         }
     }
 }

@@ -158,7 +158,11 @@ namespace PythonIntegration
             Tuple<int, string, string> movieInfo = new Tuple<int, string, string>(0, null, null);
             Task.Run(async () =>
             {
+<<<<<<< HEAD
                 movieInfo = await MauiProgram.moviesController.GenerateRandomMovie();
+=======
+                movieInfo = await MauiProgram.moviesController.GenerateMovieInfo();
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
 
             }).Wait();
             MovieId = movieInfo.Item1;

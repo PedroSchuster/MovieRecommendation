@@ -20,6 +20,32 @@ def getSimilares(base,user):
     similaridade.reverse()
     return similaridade
 
+<<<<<<< HEAD
+=======
+def getRecomendacoes(base, user):
+    totais = {}
+    somaSim = {}
+    for outro in base:
+        if outro == user:
+            continue
+        similaridade = euclidiana(base, user, outro)
+    
+        if similaridade <= 0:
+            continue
+
+        for item in base[outro]:
+            if item not in base[user]:
+                totais.setdefault(item,0)
+                totais[item] += base[outro][item] * similaridade
+                somaSim.setdefault(item,0)
+                somaSim[item] += similaridade
+    rankings = [(total / somaSim[item], item) for item, total  in totais.items()]
+    rankings.sort()
+    rankings.reverse()
+    return rankings[0:30]
+    
+                
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
 def calculaItensSimilares(base):
     result = {}
     for item in base:
@@ -38,15 +64,19 @@ def getRecomendacoesItens():
     notasUsuario = baseUsuario.values
     notas = {}
     totalSimilaridade = {}
+<<<<<<< HEAD
     
     movies_dict = loadMoviesData()
     
+=======
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
     for item, nota in notasUsuario:
         if item in similaridade_itens_dict.keys():
             for sim_tuple in pd.array(similaridade_itens_dict[item], dtype=list):
                 sim_tuple = tuple(map(str,sim_tuple.replace('(', '').replace(')', '').split(',')))
                 if str(item) + ".0" == sim_tuple[1]:
                     continue
+<<<<<<< HEAD
                 
                 genres_origin = movies_dict[int(item)]["genres"]
                 genres_comp = movies_dict[int(sim_tuple[1].replace(".0",''))]["genres"]
@@ -57,12 +87,19 @@ def getRecomendacoesItens():
                 notas[sim_tuple[1]] += float(sim_tuple[0]) * nota * count_genres
                 totalSimilaridade.setdefault(sim_tuple[1], 0)
                 totalSimilaridade[sim_tuple[1]] += float(sim_tuple[0]) + count_genres
+=======
+                notas.setdefault(sim_tuple[1], 0)
+                notas[sim_tuple[1]] += float(sim_tuple[0]) * nota
+                totalSimilaridade.setdefault(sim_tuple[1], 0)
+                totalSimilaridade[sim_tuple[1]] += float(sim_tuple[0])
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
                 
     ranking = []
     for item, score in notas.items():
         if not totalSimilaridade[item] or totalSimilaridade[item] == 0:
             totalSimilaridade[item] = score * 2
         ranking.append((item,score/totalSimilaridade[item]))
+<<<<<<< HEAD
     ranking.sort(key=lambda tup : tup[1], reverse=True)
     return ranking
 
@@ -74,6 +111,26 @@ def loadMoviesData():
         id, title, genres  = linha
         genres_splited = genres.split('|')
         movies_dict[id] = {"title" : title, "genres" : genres_splited}
+=======
+    return ranking
+
+
+def loadData(movies_dict, csv_ratings):
+        base = {}
+        for linha in csv_ratings.values:
+            user, id_filme, nota = linha
+            if (id_filme in movies_dict.keys()):
+                base.setdefault(id_filme,{})
+                base[int(id_filme)][int(user)] = float(nota)
+        return base
+
+def loadMoviesData():
+    movies = pd.read_csv("movies2.csv")
+    movies_dict = {}
+    for linha in movies.values:
+        id, title, genres  = linha
+        movies_dict[id] = title, genres
+>>>>>>> bb26de2b8705702aa55c363d0dde54c269150655
     return movies_dict
 
 result = getRecomendacoesItens()
