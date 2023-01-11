@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PythonIntegration.RecommendationPage"
+             Title="RecommendationPage">
+    <StackLayout>
+        
+        <ActivityIndicator IsRunning="{Binding IsRunning}" Margin="0,50,0,0" Color="Gray" HorizontalOptions="Center" FlowDirection="RightToLeft" IsVisible="True" IsEnabled="True"></ActivityIndicator>
+
+
+        <StackLayout Margin="0,50,0,0" Padding="0,0,0,0" HeightRequest="500" WidthRequest="500" >
+            <VerticalStackLayout
+            Spacing="25"  
+            Padding="10,0" 
+            VerticalOptions="Center">
+
+                <StackLayout>
+                    <Image
+                        IsVisible="{Binding MovieIsVisible}"
+                x:Name="movieImage"
+                Source="{Binding MovieImage}"
+                HeightRequest="300"
+                WidthRequest="200">
+
+                    </Image>
+                    <Label
+                        IsVisible="{Binding MovieIsVisible}"
+                x:Name="movieTitle"
+                FontSize="Large"
+                Text="{Binding MovieTitle}"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start">
+
+                    </Label>
+                    <Grid ColumnSpacing="-500" Margin="0,0,0,0" IsVisible="{Binding RatingIsVisible}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton x:Name="star1" Grid.Column="0" Source="{Binding Source1}" HeightRequest="100" WidthRequest="100" 
+                             Command="{Binding RatingCommand}" CommandParameter="1"></ImageButton>
+                        <ImageButton x:Name="star2" Grid.Column="1" Source="{Binding Source2}" HeightRequest="100" WidthRequest="100" 
+                             Command="{Binding RatingCommand}" CommandParameter="2"></ImageButton>
+                        <ImageButton x:Name="star3" Grid.Column="2" Source="{Binding Source3}" HeightRequest="100" WidthRequest="100"
+                             Command="{Binding RatingCommand}" CommandParameter="3"></ImageButton>
+                        <ImageButton x:Name="star4" Grid.Column="3" Source="{Binding Source4}" HeightRequest="100" WidthRequest="100"
+                             Command="{Binding RatingCommand}" CommandParameter="4"></ImageButton>
+                        <ImageButton x:Name="star5" Grid.Column="4" Source="{Binding Source5}" HeightRequest="100" WidthRequest="100"
+                             Command="{Binding RatingCommand}" CommandParameter="5"></ImageButton>
+                    </Grid>
+                </StackLayout>
+                
+                <StackLayout Margin="0,10,0,0" >
+                    <Grid ColumnSpacing="-1000" Margin="0,15,0,50" VerticalOptions="EndAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button
+                Grid.Column="0"
+                FontSize="Small"
+                Text="Classificar"
+                VerticalOptions="EndAndExpand"
+                TextColor="Black"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Center"
+                Command="{Binding RatingEnable}">
+                        </Button>
+                        <Button
+                x:Name="next"
+                Grid.Column="1"
+                FontSize="Small"
+                Text="Gerar recomendação"
+                VerticalOptions="EndAndExpand"
+                TextColor="Black"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Center"
+                Command="{Binding GenerateMovie}">
+                        </Button>
+                    </Grid>
+
+
+                </StackLayout>
+                
+            </VerticalStackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
