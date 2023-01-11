@@ -1,14 +1,16 @@
 ﻿
+using PythonIntegration.Services;
+
 namespace PythonIntegration;
 
 public static class MauiProgram
 {
-    public static MoviesController moviesController = new MoviesController();
 
 	public static MauiApp CreateMauiApp()
 	{
-        moviesController.Initialize();
-        
+        MoviesController.Initialize();
+		SingletonContainer.Initialize();
+
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()

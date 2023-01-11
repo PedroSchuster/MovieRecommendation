@@ -49,7 +49,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="IronPython" Version="3.4.0" />
 	  <PackageReference Include="Microsoft.Extensions.Primitives" Version="7.0.0" />
 	  <PackageReference Include="QuantConnect.pythonnet" Version="2.0.17" />
 	  <PackageReference Include="System.Collections" Version="4.3.0" />
@@ -67,10 +66,10 @@
   </ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="RatingPage.xaml">
+	  <MauiXaml Update="Views\RatingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RecommendationPage.xaml">
+	  <MauiXaml Update="Views\RecommendationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
