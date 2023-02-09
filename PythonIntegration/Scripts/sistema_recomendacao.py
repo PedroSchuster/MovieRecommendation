@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 def euclidiana(base, user1, user2):
     si = {}
@@ -28,8 +29,9 @@ def calculaItensSimilares(base):
     return result
 
 def getRecomendacoesItens():
-    baseUsuario = pd.read_csv(r"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\Data\userrating.csv")
-    path_sim = r"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\Data\similares.csv"
+    dir_path = os.getcwd().replace('\\Scripts','')
+    baseUsuario = pd.read_csv("{0}\\Data\\userrating.csv".format(dir_path))
+    path_sim = "{0}\\Data\\similares.csv".format(dir_path)
     
     similaridade_itens = pd.read_csv(path_sim, index_col=0)
     similaridade_itens_dict = similaridade_itens.to_dict("split")
@@ -39,7 +41,7 @@ def getRecomendacoesItens():
     notas = {}
     totalSimilaridade = {}
     
-    movies_dict = loadMoviesData()
+    movies_dict = loadMoviesData(dir_path)
     
     for item, nota in notasUsuario:
         if item in similaridade_itens_dict.keys():
@@ -72,8 +74,8 @@ def getRecomendacoesItens():
     return ranking
 
 
-def loadMoviesData():
-    movies = pd.read_csv(r"C:\Users\Usuario\Desktop\Programacao\Aulas\Python\PythonIntegration\PythonIntegration\Data\movies2.csv")
+def loadMoviesData(dir_path):
+    movies = pd.read_csv("{0}\\Data\\movies2.csv".format(dir_path))
     movies_dict = {}
     for linha in movies.values:
         id, title, genres  = linha

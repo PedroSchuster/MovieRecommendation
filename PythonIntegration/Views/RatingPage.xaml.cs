@@ -7,6 +7,7 @@ using System.Globalization;
 using TMDbLib.Objects.Movies;
 using System.Drawing.Imaging;
 using PythonIntegration.ViewModels;
+using PythonIntegration.Services;
 
 namespace PythonIntegration;
 
@@ -15,8 +16,17 @@ public partial class RatingPage : ContentPage
 	public RatingPage()
 	{
 		InitializeComponent();
-        BindingContext = new MovieRatingVM();
 	}
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        BindingContext = SingletonContainer.RatingVM;
+    }
+
+    protected override void OnDisappearing()
+	{
+		base.OnDisappearing();
+    }
 
 }

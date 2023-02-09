@@ -1,4 +1,5 @@
 ﻿
+using PythonIntegration.Scripts;
 using PythonIntegration.Services;
 
 namespace PythonIntegration;
@@ -20,8 +21,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-
-		return builder.Build();
+        return builder.Build();
 	}
 
    

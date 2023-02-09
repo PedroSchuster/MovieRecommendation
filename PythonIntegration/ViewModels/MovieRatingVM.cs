@@ -12,6 +12,17 @@ namespace PythonIntegration.ViewModels
 {
     public class MovieRatingVM : INotifyPropertyChanged
     {
+        private bool _isRunning = true;
+        public bool IsRunning
+        {
+            get { return _isRunning; }
+            set
+            {
+                _isRunning = value;
+                OnPropertyChanged(nameof(IsRunning));
+            }
+        }
+
         private string _source1 = "star.png";
         public string Source1
         {
@@ -131,14 +142,14 @@ namespace PythonIntegration.ViewModels
             NextMovie = new Command(async () =>
             {
                 await MoviesController.
-                    WriteRatingData("C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\userrating.csv", MovieId, Rating);
-                GenerateMovieInfo();
+                    WriteRatingData(MovieId, Rating);
+                await GenerateMovieInfo();
                 Rating = 0;
             });
 
-            NeverWatch = new Command(() =>
+            NeverWatch = new Command(async () =>
             {
-                GenerateMovieInfo();
+                await GenerateMovieInfo();
                 Rating = 0;
             });
 
@@ -154,18 +165,19 @@ namespace PythonIntegration.ViewModels
             }
         }
 
-        private void GenerateMovieInfo()
+        private async Task GenerateMovieInfo()
         {
             Tuple<int, string, string> movieInfo = new Tuple<int, string, string>(0, null, null);
-            Task.Run(async () =>
-            {
-                movieInfo = await MoviesController.GenerateRandomMovie();
 
-            }).Wait();
+            IsRunning = true;
+
+            movieInfo = await MoviesController.GenerateRandomMovie();
+
             MovieId = movieInfo.Item1;
             MovieTitle = movieInfo.Item2;
             MovieImage = ImageSource.FromFile(movieInfo.Item3);
 
+            IsRunning = false;
         }
 
         private void ChangeStarImage(int n)

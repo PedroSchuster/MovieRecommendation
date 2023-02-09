@@ -25,5 +25,6 @@ public partial class MainPage : ContentPage
         Navigation.PushAsync(new RecommendationPage());
 
     }
+
 }
 

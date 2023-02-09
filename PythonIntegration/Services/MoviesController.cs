@@ -17,12 +17,14 @@ using Debug = System.Diagnostics.Debug;
 using Python.Runtime;
 using Fasterflect;
 using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
+using System.Reflection;
 
 namespace PythonIntegration.Services
 {
     public static class MoviesController
     {
-
+        private static string dir;
         private static string lastFilePath = string.Empty;
         private static List<object> pyResult;
 
@@ -45,10 +47,8 @@ namespace PythonIntegration.Services
             {
                 while (!sr.EndOfStream)
                 {
-
                     if (sr.ReadLine() == "id,title,genres")
                         continue;
-
 
                     string[] colunms = sr.ReadLine()?.Split(",");
                     if (colunms != null)
@@ -59,8 +59,6 @@ namespace PythonIntegration.Services
 
                         _movies.Add(movieId, new Tuple<string, ICollection<string>>(title, genres));
                     }
-
-
 
                 }
             }
@@ -97,10 +95,6 @@ namespace PythonIntegration.Services
                             }
 
                         }
-
-
-
-
                     }
                 }
             }
@@ -110,18 +104,43 @@ namespace PythonIntegration.Services
             }
         }
 
-        public static Task WriteRatingData(string path, int movieId, float rating)
+        public static Task WriteRatingData(int movieId, float rating)
         {
-            using (StreamWriter sw = File.AppendText(path))
+            string path = dir + "\\Data\\userrating.csv";
+            try
             {
-                sw.WriteLine(movieId + "," + rating);
+                using (StreamWriter sw = File.AppendText(path))
+                {
+                    sw.WriteLine(movieId + "," + rating);
+                }
+
+                ICollection<string> genres = _movies[movieId].Item2;
+                RatedMovies.Add(movieId, new Tuple<Dictionary<int, float>, ICollection<string>>(new Dictionary<int, float>(), genres));
             }
-
-            ICollection<string> genres = _movies[movieId].Item2;
-            RatedMovies.Add(movieId, new Tuple<Dictionary<int, float>, ICollection<string>>(new Dictionary<int, float>(), genres));
-
+            catch(Exception e)
+            {
+                return null;
+            }
             return Task.CompletedTask;
         }
+
+        public static void RemoveImageCache()
+        {
+            string path = dir + "\\Resources\\Images";
+            DirectoryInfo dirInfo = new DirectoryInfo(path);
+            FileInfo[] files = dirInfo.GetFiles();
+            foreach (var item in files)
+            {
+                try
+                {
+                    item.Delete();
+                }
+                catch
+                {
+                    continue;
+                }
+            }
+        } 
 
         private static async Task<Tuple<int, string, string>> GenerateMovieInfo(int id)
         {
@@ -151,7 +170,7 @@ namespace PythonIntegration.Services
 
             string tmp = Regex.Replace(movieName, "[^0-9a-zA-Z]+", "");
             string fileName = tmp.Replace(" ", "").ToLower() + ".jpg";
-            string filePath = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\Resources\\Images\\" + fileName;
+            string filePath = dir + "Resources\\Images\\" + fileName;
 
             if (lastFilePath != filePath)
             {
@@ -225,7 +244,7 @@ namespace PythonIntegration.Services
 
             Tuple<int, string, string> result = null;
 
-            if (pyResult.Count > 0)
+            if (pyResult != null && pyResult.Count > 0)
             {
                 do
                 {
@@ -243,20 +262,36 @@ namespace PythonIntegration.Services
 
         public static void Initialize()
         {
-            string pathMovies = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\Data\\movies2.csv";
+            int trashIndex = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).IndexOf("bin");
+            dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).Remove(trashIndex);
+
+            string pathMovies = dir + "Data\\movies2.csv";
             //string pathRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\ratings2.csv";
-            string pathUserRating = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\Data\\userrating.csv";
+            string pathUserRating = dir + "Data\\userrating.csv";
             LoadMoviesData(pathMovies);
-            LoadRatingsData(pathUserRating, RatedMovies);
+            LoadRatingsData(pathUserRating, _ratedMovies);
+
 
         }
 
         public static void RunPythonCode()
         {
+            string dllPath = dir + "bin\\python38.dll";
+
+            Environment.SetEnvironmentVariable("PATH", dir, EnvironmentVariableTarget.Process);
+
+            Environment.SetEnvironmentVariable("PYTHONHOME", dir, EnvironmentVariableTarget.Process);
+
+            Environment.SetEnvironmentVariable("PYTHONPATH", dir, EnvironmentVariableTarget.Process);
+
+            if (Runtime.PythonDLL == null)
+            {
+                Runtime.PythonDLL = dllPath;
+            }
 
             try
             {
-                string scriptFile = "C:\\Users\\Usuario\\Desktop\\Programacao\\Aulas\\Python\\PythonIntegration\\PythonIntegration\\Scripts\\sistema_recomendacao.py";
+                string scriptFile = dir + "Scripts\\sistema_recomendacao.py";
                 string pythonCode = "";
                 using (var streamReader = new StreamReader(scriptFile, Encoding.UTF8))
                 {

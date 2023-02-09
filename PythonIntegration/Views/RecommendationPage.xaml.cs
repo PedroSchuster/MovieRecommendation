@@ -14,6 +14,10 @@ public partial class RecommendationPage : ContentPage
 	{
 		base.OnAppearing();
         BindingContext = SingletonContainer.MovieRecVM;
+    }
 
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
     }
 }
